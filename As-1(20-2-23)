@@ -1,0 +1,17 @@
+//to find smallest among n numbers
+#include <stdio.h>
+int main()
+{
+int num,i,low,ele;
+i=1;
+scanf("%d",&num);
+while(i<=num)
+{
+    scanf("%d",&ele);
+    if(i==1) low=ele;
+    if(ele<low)
+    low=ele;
+    i++;
+}
+printf("lowest is:%d",low);
+}
